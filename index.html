@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora</h1>
+        <form action="resultado.php" method="POST" class="form">
+            <div class="field-container">
+                <fieldset class="fieldset">
+                    <label for="primeiro_operando">Número: </label>
+                    <input type="number" id="primeiro_operando" name="primeiro_operando">
+                </fieldset>
+                <fieldset class="fieldset">
+                    <select name="operacao" id="operacao">
+                        <option value="adicao">+</option>
+                        <option value="subtracao">-</option>
+                        <option value="multiplicacao">X</option>
+                        <option value="divisao">÷</option>
+                    </select>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <label for="segundo_operando">Número: </label>
+                    <input type="number" id="segundo_operando" name="segundo_operando">
+                </fieldset>
+            </div>
+            <div class="button-container">
+                <button type="submit" value="Enviar">Calcular</button>
+            </div>
+        </form>
+    </div>
+     
+</body>
+</html>
